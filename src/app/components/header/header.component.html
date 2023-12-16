@@ -1,1 +1,47 @@
-<p>header works!</p>
+<header>
+  <div class="header-main">
+    <div class="header-up">
+      <div class="up-left">
+        <img src="/assets/icons/jordan.png">
+      </div>
+      <div class="up-right">
+        <button>Sign Up</button>
+        <span></span>
+        <button>Sign In</button>
+      </div>
+    </div>
+    <div class="header-middle">
+      <div class="middle-left">
+        <img src="/assets/icons/nike.png">
+      </div>
+      <div class="middle-center">
+        <ul>
+          <li>
+            <p>Men</p>
+          </li>
+          <li>
+            <p>Women</p>
+          </li>
+          <li>
+            <p>Kids</p>
+          </li>
+        </ul>
+      </div>
+      <div class="middle-right">
+        <button>
+          <img src="/assets/icons/bag.png">
+        </button>
+      </div>
+    </div>
+    <div class="header-down">
+      <ng-container *ngFor="let data of newData">
+        <ng-container *ngIf="currentDataIndex === data.id">
+          <div class="container">
+            <p>{{ data.title }}</p>
+            <p>{{ data.information }}</p>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</header>

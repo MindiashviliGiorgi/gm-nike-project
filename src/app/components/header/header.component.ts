@@ -42,7 +42,7 @@ export class HeaderComponent {
 
     setInterval(() => {
       this.currentDataIndex = (this.currentDataIndex + 1) % this.newData.length;
-    }, 2000);
+    }, 1500);
   }
 
 

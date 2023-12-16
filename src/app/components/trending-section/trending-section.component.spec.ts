@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { TrendingSectionComponent } from './trending-section.component';
+
+describe('TrendingSectionComponent', () => {
+  let component: TrendingSectionComponent;
+  let fixture: ComponentFixture<TrendingSectionComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [TrendingSectionComponent]
+    });
+    fixture = TestBed.createComponent(TrendingSectionComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -1,0 +1,175 @@
+{
+  "men" : {
+    "shoes" : {
+      "id" : 0,
+      "name" : "Nike Air Max 1",
+      "category" : "Men's Shoes",
+      "color" : "black",
+      "price" : 144.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-8.png"}
+      ]
+    },
+    "shoes1" : {
+      "id" : 1,
+      "name" : "Nike Air Max 1 '86 OG G",
+      "category" : "Men's Shoes",
+      "color" : "green",
+      "price" : 122.47,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes1/shoes1-8.png"}
+      ]
+    },
+    "shoes2" : {
+      "id" : 2,
+      "name" : "Nike Air Force 1 Luxe",
+      "category" : "Men's Shoes",
+      "color" : "black",
+      "price" : 129.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes2/shoes2-8.png"}
+      ]
+    },
+    "shoes3" : {
+      "id" : 3,
+      "name" : "Nike Air Force 1 Luxe",
+      "category" : "Men's Shoes",
+      "color" : "black",
+      "price" : 149.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-8.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes3/shoes3-9.png"}
+      ]
+    },
+    "shoes4" : {
+      "id" : 4,
+      "name" : "Nike Lunar Force 1",
+      "category" : "Men's Shoes",
+      "color" : "black",
+      "price" : 164.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes4/shoes4-8.png"}
+      ]
+    },
+    "shoes5" : {
+      "id" : 5,
+      "name" : "Nike Air Force 1 Mid '07",
+      "category" : "Men's Shoes",
+      "color" : "brown",
+      "price" : 119.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes5/shoes5-8.png"}
+      ]
+    },
+    "shoes6" : {
+      "id" : 6,
+      "name" : "Nike Dunk High x SOULGOODS",
+      "category" : "Men's Shoes",
+      "color" : "gray",
+      "price" : 129.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes6/shoes6-8.png"}
+      ]
+    },
+    "shoes7" : {
+      "id" : 7,
+      "name" : "Nike Dunk High 85",
+      "category" : "Men's Shoes",
+      "color" : "white",
+      "price" : 124.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes7/shoes7-8.png"}
+      ]
+    },
+    "shoes8" : {
+      "id" : 8,
+      "name" : "Nike x Billie Eilish Air Force 1 High '07",
+      "category" : "Men's Shoes",
+      "color" : "green",
+      "price" : 154.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes8/shoes8-8.png"}
+      ]
+    },
+    "shoes9" : {
+      "id" : 9,
+      "name" : "Nike Dunk Low",
+      "category" : "Men's Shoes",
+      "color" : "white",
+      "price" : 119.95,
+      "images" : [
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-1.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-2.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-3.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-4.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-5.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-6.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-7.png"},
+        {"imageSrc": "/assets/images/mens-shoes/shoes9/shoes9-8.png"}
+      ]
+    }
+  }
+}

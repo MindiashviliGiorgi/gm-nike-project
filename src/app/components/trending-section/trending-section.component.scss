@@ -1,0 +1,41 @@
+section {
+  .section-main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 10px 50px;
+    .title {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title-left {
+        h1 {
+          font-weight: 100;
+        }
+      }
+      .title-right {
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+        align-items: center;
+        .left-arrow,
+        .right-arrow {
+          padding: 5px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          background-color: #f0f0f0;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}

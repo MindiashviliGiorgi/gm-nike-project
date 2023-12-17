@@ -2,6 +2,7 @@
   "men" : {
     "shoes" : {
       "id" : 0,
+      "avatar" : "/assets/images/mens-shoes/shoes/shoes-1.png",
       "name" : "Nike Air Max 1",
       "category" : "Men's Shoes",
       "color" : "black",
@@ -19,6 +20,7 @@
     },
     "shoes1" : {
       "id" : 1,
+      "avatar" : "/assets/images/mens-shoes/shoes1/shoes1-1.png",
       "name" : "Nike Air Max 1 '86 OG G",
       "category" : "Men's Shoes",
       "color" : "green",
@@ -36,6 +38,7 @@
     },
     "shoes2" : {
       "id" : 2,
+      "avatar" : "/assets/images/mens-shoes/shoes2/shoes2-1.png",
       "name" : "Nike Air Force 1 Luxe",
       "category" : "Men's Shoes",
       "color" : "black",
@@ -53,6 +56,7 @@
     },
     "shoes3" : {
       "id" : 3,
+      "avatar" : "/assets/images/mens-shoes/shoes3/shoes3-1.png",
       "name" : "Nike Air Force 1 Luxe",
       "category" : "Men's Shoes",
       "color" : "black",
@@ -71,6 +75,7 @@
     },
     "shoes4" : {
       "id" : 4,
+      "avatar" : "/assets/images/mens-shoes/shoes4/shoes4-1.png",
       "name" : "Nike Lunar Force 1",
       "category" : "Men's Shoes",
       "color" : "black",
@@ -88,6 +93,7 @@
     },
     "shoes5" : {
       "id" : 5,
+      "avatar" : "/assets/images/mens-shoes/shoes5/shoes5-1.png",
       "name" : "Nike Air Force 1 Mid '07",
       "category" : "Men's Shoes",
       "color" : "brown",
@@ -105,6 +111,7 @@
     },
     "shoes6" : {
       "id" : 6,
+      "avatar" : "/assets/images/mens-shoes/shoes6/shoes6-1.png",
       "name" : "Nike Dunk High x SOULGOODS",
       "category" : "Men's Shoes",
       "color" : "gray",
@@ -122,6 +129,7 @@
     },
     "shoes7" : {
       "id" : 7,
+      "avatar" : "/assets/images/mens-shoes/shoes7/shoes7-1.png",
       "name" : "Nike Dunk High 85",
       "category" : "Men's Shoes",
       "color" : "white",
@@ -139,6 +147,7 @@
     },
     "shoes8" : {
       "id" : 8,
+      "avatar" : "/assets/images/mens-shoes/shoes8/shoes8-1.png",
       "name" : "Nike x Billie Eilish Air Force 1 High '07",
       "category" : "Men's Shoes",
       "color" : "green",
@@ -156,6 +165,7 @@
     },
     "shoes9" : {
       "id" : 9,
+      "avatar" : "/assets/images/mens-shoes/shoes9/shoes9-1.png",
       "name" : "Nike Dunk Low",
       "category" : "Men's Shoes",
       "color" : "white",

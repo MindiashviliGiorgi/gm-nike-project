@@ -6,13 +6,34 @@
       </div>
       <div class="title-right">
         <div class="left-arrow">
-          <img src="/assets/icons/right-arrow.png" style="transform: rotate(180deg);">
+          <button (click)="moveScrollLeft()" [disabled]="isScrollZero()">
+            <img style="margin-right: 2px;"  src="/assets/icons/right-arrow.png" style="transform: rotate(180deg);">
+          </button>
         </div>
         <div class="right-arrow">
-          <img src="/assets/icons/right-arrow.png">
+          <button (click)="moveScrollRight()" [disabled]="isScrollZeroRight()">
+            <img style="margin-left: 2px;" src="/assets/icons/right-arrow.png">
+          </button>
         </div>
       </div>
     </div>
-    <div class="body"></div>
+    <div class="containers-list">
+      <ng-container *ngFor="let data of mensDataList; index as i">
+        <div class="container">
+          <div class="container-img">
+            <img src="{{data.avatar}}">
+          </div>
+          <div class="container-title">
+            <h2>{{ data.name }}</h2>
+          </div>
+          <div class="container-category">
+            <p>{{ data.category }}</p>
+          </div>
+          <div class="container-price">
+              <span>£{{ data.price }}</span>
+          </div>
+        </div>
+      </ng-container>
+    </div>
   </div>
 </section>

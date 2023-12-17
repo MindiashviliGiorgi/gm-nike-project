@@ -12,6 +12,7 @@ import { SingleItemComponent } from './pages/single-item/single-item.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BagComponent } from './components/bag/bag.component';
 import { BagPageComponent } from './pages/bag-page/bag-page.component';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { BagPageComponent } from './pages/bag-page/bag-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -22,7 +22,6 @@ export class TrendingSectionComponent {
     .subscribe((res) => {
       this.mensData = res;
       this.mensDataList = Object.values(this.mensData.men) as MensShoes[];
-      console.log(this.mensDataList)
     })
   }
 
@@ -31,8 +30,6 @@ export class TrendingSectionComponent {
     if (bodyDiv) {
       bodyDiv.scrollLeft += 370;
     }
-    
-    console.log('working')
   }
 
   moveScrollLeft() {

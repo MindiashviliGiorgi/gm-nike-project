@@ -1,23 +1,5 @@
 {
   "men" : {
-    "shoes" : {
-      "id" : 0,
-      "avatar" : "/assets/images/mens-shoes/shoes/shoes-1.png",
-      "name" : "Nike Air Max 1",
-      "category" : "Men's Shoes",
-      "color" : "black",
-      "price" : 144.95,
-      "images" : [
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-1.png"},
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-2.png"},
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-3.png"},
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-4.png"},
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-5.png"},
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-6.png"},
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-7.png"},
-        {"imageSrc": "/assets/images/mens-shoes/shoes/sheos-8.png"}
-      ]
-    },
     "shoes1" : {
       "id" : 1,
       "avatar" : "/assets/images/mens-shoes/shoes1/shoes1-1.png",

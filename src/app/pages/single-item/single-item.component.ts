@@ -10,7 +10,8 @@ import { DataService } from 'src/app/shared/data.service';
 })
 export class SingleItemComponent implements OnInit {
   singleItemData: any[] = [];
-  
+  choicedImageSrc : string = '';
+
   constructor(
     private route: ActivatedRoute,
     private http: HttpClient,
@@ -30,11 +31,15 @@ export class SingleItemComponent implements OnInit {
           const selectedShoe = Object.values(menObject).find(shoe => shoe.id.toString() === itemId);
           if (selectedShoe) {
             this.singleItemData = [...this.singleItemData, selectedShoe];
-            console.log(this.singleItemData)
+            this.choicedImageSrc = this.singleItemData[0].images[0].imageSrc;
           }
         }
       });
     }
+  }
+
+  onImageMouseOver(imageSrc : string):void {
+    this.choicedImageSrc = imageSrc;
   }
   
   

@@ -1,5 +1,22 @@
+<app-header/>
 <div class="single-item-main">
   <ng-container *ngFor="let item of singleItemData">
-    {{item.name}}
+    <div class="single-item-main-left">
+      <div class="images-list">
+        <ul>
+          <ng-container *ngFor="let image of item.images">
+            <li>
+              <img src="{{image.imageSrc}}" (mouseover)="onImageMouseOver(image.imageSrc)">
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+      <div class="choiced-image">
+        <img [src]="choicedImageSrc">
+      </div>
+    </div>
+    <div class="single-item-main-right">
+
+    </div>
   </ng-container>
 </div>

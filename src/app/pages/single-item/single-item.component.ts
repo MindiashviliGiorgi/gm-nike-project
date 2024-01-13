@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/shared/data.service';
+import { SizesService } from 'src/app/shared/sizes.service';
 
 @Component({
   selector: 'app-single-item',
@@ -11,15 +12,18 @@ import { DataService } from 'src/app/shared/data.service';
 export class SingleItemComponent implements OnInit {
   singleItemData: any[] = [];
   choicedImageSrc : string = '';
+  itemSizeList : string[] = [];
 
   constructor(
     private route: ActivatedRoute,
     private http: HttpClient,
-    private data: DataService
+    private data: DataService,
+    private sizes : SizesService
   ) {}
 
   ngOnInit(): void {
     this.getItem();
+    this.getSizeList();
   }
 
   getItem() {
@@ -32,6 +36,7 @@ export class SingleItemComponent implements OnInit {
           if (selectedShoe) {
             this.singleItemData = [...this.singleItemData, selectedShoe];
             this.choicedImageSrc = this.singleItemData[0].images[0].imageSrc;
+            console.log(this.singleItemData)
           }
         }
       });
@@ -42,6 +47,9 @@ export class SingleItemComponent implements OnInit {
     this.choicedImageSrc = imageSrc;
   }
   
+  getSizeList() {
+    this.itemSizeList = this.sizes.getSizes();
+  }
   
 }
 

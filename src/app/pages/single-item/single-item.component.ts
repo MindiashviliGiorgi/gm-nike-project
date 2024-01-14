@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/shared/data.service';
 import { SizesService } from 'src/app/shared/sizes.service';
@@ -18,12 +18,19 @@ export class SingleItemComponent implements OnInit {
     private route: ActivatedRoute,
     private http: HttpClient,
     private data: DataService,
-    private sizes : SizesService
+    private sizes : SizesService,
+    private el : ElementRef
   ) {}
 
   ngOnInit(): void {
     this.getItem();
     this.getSizeList();
+  }
+
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.getItemColor();
+    }, 300)
   }
 
   getItem() {
@@ -50,6 +57,11 @@ export class SingleItemComponent implements OnInit {
   getSizeList() {
     this.itemSizeList = this.sizes.getSizes();
   }
-  
+
+  getItemColor() {
+    const colorCircle = this.el.nativeElement.querySelector('.circle-color');
+    colorCircle.style.backgroundColor = this.singleItemData[0].color;
+  }
+
 }
 

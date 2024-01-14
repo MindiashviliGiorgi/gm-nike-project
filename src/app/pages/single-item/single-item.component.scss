@@ -28,7 +28,6 @@
           height: 60px;
           background-color: #e0e0e0;
           border-radius: 5px;
-          cursor: pointer;
           &:hover {
             background-color: #a1a1a1;
           }
@@ -44,10 +43,13 @@
     .choiced-image {
       width: 100%;
       height: 620px;
+      background-color: #e4e4e4;
+      border-radius: 5px;
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-radius: 5px;
       }
     }
   }
@@ -68,6 +70,22 @@
       width: 100%;
       p {
         font-size: 17px;
+      }
+    }
+    .item-color {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      column-gap: 10px;
+      p {
+        font-size: 18px;
+      }
+      .circle-color {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        border: 1px solid #000;
       }
     }
     .item-price {
@@ -100,6 +118,30 @@
           p {
             font-size: 17px;
           }
+        }
+      }
+    }
+    .btn {
+      width: 100%;
+      margin-top: 20px;
+      button {
+        width: 100%;
+        height: auto;
+        padding: 13px 20px;
+        font-size: 17px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+          opacity: 0.8;
+        }
+        &:active {
+          opacity: 1;
+          transition: 0s;
         }
       }
     }

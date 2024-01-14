@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener } from '@angular/core';
 
 interface NewInformation {
   id : number;
@@ -13,13 +13,6 @@ interface NewInformation {
 })
 export class HeaderComponent {
   currentDataIndex : number = 0;
-
-  constructor() {}
-
-  ngOnInit(): void {
-    this.showItem()
-  }
-
   newData : NewInformation[] = [
     {
       "id" : 0,
@@ -38,12 +31,45 @@ export class HeaderComponent {
     }
   ];
 
-  showItem() {
+  constructor(private el : ElementRef) {}
 
+  ngOnInit(): void {
+    this.showItem();
+    this.onHeaderScroll();
+  }
+
+  showItem() {
     setInterval(() => {
       this.currentDataIndex = (this.currentDataIndex + 1) % this.newData.length;
     }, 1500);
   }
 
+  @HostListener("document:scroll")
+  onHeaderScroll() {
+    let pos = document.documentElement.scrollTop;
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100) / calcHeight);
+
+    const headerMain = this.el.nativeElement.querySelector('.header-main')
+    const headerUp = this.el.nativeElement.querySelector('.header-up');
+    const headerMiddle = this.el.nativeElement.querySelector('.header-middle');
+    const headerDown = this.el.nativeElement.querySelector('.header-down');
+
+    if (scrollValue > 5) {
+      headerMain.style.height = '150px'
+      headerUp.style.display = 'none';
+      headerDown.style.display = 'none'
+      headerMiddle.style.position = 'fixed';
+      headerMiddle.style.left = '0';
+      headerMiddle.style.right = '0';
+      headerMiddle.style.top = '0';
+      headerMiddle.style.zIndex = 10;
+    } else if (scrollValue < 5) {
+      headerMain.style.height = 'auto'
+      headerUp.style.display = 'flex';
+      headerDown.style.display = 'flex';
+      headerMiddle.style.position = 'relative'
+    }
+  }
 
 }

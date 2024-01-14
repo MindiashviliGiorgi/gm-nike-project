@@ -1,4 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 import { MensData, MensShoes } from 'src/app/interfaces/mens-data.interface';
 import { DataService } from 'src/app/shared/data.service';
 
@@ -11,7 +12,11 @@ export class TrendingSectionComponent {
   mensData : MensData | undefined;
   mensDataList: MensShoes[] = [];
 
-  constructor(private dataService : DataService, private el : ElementRef) {}
+  constructor(
+    private dataService : DataService,
+    private el : ElementRef,
+    private route : Router
+    ) {}
 
   ngOnInit(): void {
     this.getDataMens();

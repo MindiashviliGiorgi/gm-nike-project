@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from 'src/app/shared/data.service';
+import { ShoppingCartService } from 'src/app/shared/shopping-cart.service';
 import { SizesService } from 'src/app/shared/sizes.service';
 
 @Component({
@@ -19,7 +20,8 @@ export class SingleItemComponent implements OnInit {
     private http: HttpClient,
     private data: DataService,
     private sizes : SizesService,
-    private el : ElementRef
+    private el : ElementRef,
+    private shoppingCart : ShoppingCartService
   ) {}
 
   ngOnInit(): void {
@@ -43,7 +45,6 @@ export class SingleItemComponent implements OnInit {
           if (selectedShoe) {
             this.singleItemData = [...this.singleItemData, selectedShoe];
             this.choicedImageSrc = this.singleItemData[0].images[0].imageSrc;
-            console.log(this.singleItemData)
           }
         }
       });
@@ -63,5 +64,11 @@ export class SingleItemComponent implements OnInit {
     colorCircle.style.backgroundColor = this.singleItemData[0].color;
   }
 
-}
+  addToBag(): void {
+    if (this.singleItemData.length > 0) {
+      const selectedItem = this.singleItemData[0];
+      this.shoppingCart.addItem(selectedItem);
+    }
+  }
 
+}

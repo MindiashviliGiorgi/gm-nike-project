@@ -39,8 +39,9 @@
         </ul>
       </div>
       <div class="btn">
-        <button>Add to Bag</button>
+        <button (click)="addToBag()">Add to Bag</button>
       </div>
+      <button [routerLink]="'/bag'">Open Cart</button>
       <div class="about-item">
         <p>Free Pick-up</p>
         <p>

@@ -3,10 +3,11 @@
   min-height: 100vh;
   padding: 40px 150px;
   display: flex;
-  align-items: top;
+  align-items: start;
   justify-content: center;
   flex-direction: row;
   column-gap: 40px;
+  position: relative;
   .single-item-main-left {
     width: 100%;
     flex: 2;
@@ -14,6 +15,8 @@
     align-items: top;
     flex-direction: row;
     column-gap: 30px;
+    position: sticky;
+    top: 70px;
     .images-list {
       width: 60px;
       height: auto;
@@ -143,6 +146,18 @@
           opacity: 1;
           transition: 0s;
         }
+      }
+    }
+    .about-item {
+      width: 100%;
+      height: auto;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      p {
+        font-size: 18px;
+        line-height: 25px;
       }
     }
   }

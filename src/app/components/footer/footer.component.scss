@@ -1,0 +1,41 @@
+.footer-main {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  padding: 40px 50px;
+  color: #fff;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  flex-direction: row;
+  column-gap: 40px;
+  .web-page-links,
+  .about-me,
+  .my-projects,
+  .social-links {
+    width: 100%;
+    flex: 1;
+    height: 100%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      .list-header {
+        font-size: 18px;
+        color: #fff;
+      }
+      li {
+        list-style: none;
+        a {
+          color: #686868;
+          transition: 0.2s;
+          font-size: 15px;
+          text-decoration: none;
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

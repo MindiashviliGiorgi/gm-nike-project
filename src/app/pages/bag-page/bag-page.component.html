@@ -1,5 +1,32 @@
 <app-header/>
 <div class="bag-page-main">
+  <div class="page-left">
+    <div class="free-delivery">
+      <h2>Free Delivery for Members</h2>
+      <p>
+        Become a Nike-GM Member to get fast and free delivery. 
+        <u>Sign in</u> for join us
+      </p>
+    </div>
+    <div class="items-in-bag">
+      <div class="title">
+        <h2>Bag</h2>
+      </div>
+      <div class="items-list">
+        <ul>
+          <ng-container *ngFor="let item of items">
+            <li>
+              {{item.name}}
+              <button (click)="removeItem(item)">Remove Item</button>
+            </li>
+          </ng-container>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="page-right">
 
+  </div>
 </div>
+<app-trending-section/>
 <app-footer/>

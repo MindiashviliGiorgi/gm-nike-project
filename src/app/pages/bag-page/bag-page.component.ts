@@ -19,7 +19,10 @@ export class BagPageComponent {
 
   getItems() {
     this.items = this.shoppingCart.getItem();
-    console.log(this.items)
+  }
+
+  removeItem(item : any):void {
+    this.shoppingCart.removeCartItem(item);
   }
 
 }

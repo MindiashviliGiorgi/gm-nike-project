@@ -16,8 +16,16 @@
         <ul>
           <ng-container *ngFor="let item of items">
             <li>
-              {{item.name}}
-              <button (click)="removeItem(item)">Remove Item</button>
+              <div class="container">
+                <div class="container-left">
+                  <div class="item-avatar">
+                    <img src="{{item.avatar}}">
+                  </div>
+                  <div class="item-information">
+                    
+                  </div>
+                </div>
+              </div>
             </li>
           </ng-container>
         </ul>

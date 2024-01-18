@@ -22,8 +22,31 @@
                     <img src="{{item.avatar}}">
                   </div>
                   <div class="item-information">
-                    
+                    <div class="item-name">
+                      <h3>{{item.name}}</h3>
+                    </div>
+                    <div class="item-type">
+                      <p>{{item.category}}</p>
+                    </div>
+                    <div class="item-color">
+                      <p>{{item.color}}</p>
+                    </div>
+                    <div class="item-size"></div>
+                    <div class="item-btns">
+                      <button>
+                        <img src="/assets/icons/gift-icon.png">
+                      </button>
+                      <button>
+                        <img src="/assets/icons/heart.png">
+                      </button>
+                      <button>
+                        <img src="/assets/icons/trash-icon.png">
+                      </button>
+                    </div>
                   </div>
+                </div>
+                <div class="container-right">
+                  <p>£{{item.price}}</p>
                 </div>
               </div>
             </li>
@@ -33,7 +56,6 @@
     </div>
   </div>
   <div class="page-right">
-
   </div>
 </div>
 <app-trending-section/>

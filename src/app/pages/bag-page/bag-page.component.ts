@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { ShoppingCartService } from 'src/app/shared/shopping-cart.service';
 
 @Component({
@@ -10,7 +10,8 @@ export class BagPageComponent {
   items : any[] = [];
 
   constructor(
-    private shoppingCart : ShoppingCartService
+    private shoppingCart : ShoppingCartService,
+    private el : ElementRef
   ) {}
 
   ngOnInit(): void {
@@ -23,6 +24,19 @@ export class BagPageComponent {
 
   removeItem(item : any):void {
     this.shoppingCart.removeCartItem(item);
+  }
+
+  promoCodeField : boolean = false;
+  openPromoCodeField() {
+    const arrow = this.el.nativeElement.querySelector('.promo-arrow');
+
+    this.promoCodeField = !this.promoCodeField;
+    if(this.promoCodeField) {
+      arrow.style.transform = 'rotate(-90deg)';
+    } else {
+      arrow.style.transform = 'rotate(90deg)';
+    };
+    
   }
 
 }

@@ -11,7 +11,6 @@
     <div class="items-in-bag">
       <div class="title">
         <h2>Bag</h2>
-        <h2>Testing</h2>
       </div>
       <div class="items-list">
         <ul>
@@ -57,6 +56,25 @@
     </div>
   </div>
   <div class="page-right">
+    <div class="summary-title" style="margin-bottom: 30px;">
+      <h1>Summary</h1>
+    </div>
+    <div class="summary-details">
+      <div class="promo-code">
+        <div class="promo-code-title" (click)="openPromoCodeField()">
+          <p>Do you have a Promo code ?</p>
+          <img src="/assets/icons/right-arrow.png" class="promo-arrow">
+        </div>
+        <div class="promo-code-input" *ngIf="promoCodeField">
+          <input type="text">
+          <button>Apply</button>
+        </div>
+      </div>
+      <div class="subtotal"></div>
+      <div class="delivery"></div>
+      <div class="total"></div>
+      <div class="btns"></div>
+    </div>
   </div>
 </div>
 <app-trending-section/>

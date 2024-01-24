@@ -65,12 +65,20 @@
           <p>Do you have a Promo code ?</p>
           <img src="/assets/icons/right-arrow.png" class="promo-arrow">
         </div>
-        <div class="promo-code-input" *ngIf="promoCodeField">
+        <div class="promo-code-input">
           <input type="text">
           <button>Apply</button>
+          
         </div>
       </div>
-      <div class="subtotal"></div>
+      <div class="subtotal">
+        <div class="sub-name">
+          <p>Subtotal</p>
+        </div>
+        <div class="sub-price">
+          <p *ngIf="subtotalPrice !== undefined">£{{subtotalPrice}}</p>
+        </div>
+      </div>
       <div class="delivery"></div>
       <div class="total"></div>
       <div class="btns"></div>

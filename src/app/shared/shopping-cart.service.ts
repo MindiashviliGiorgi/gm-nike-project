@@ -42,4 +42,9 @@ export class ShoppingCartService {
     this.items = storedItems ? JSON.parse(storedItems) : [];
   }
 
+  calculateSubtotal(items: any[]): number {
+    const prices = items.map((item) => item.price);
+    return prices.reduce((sum, price) => sum + price, 0);
+  }
+
 }

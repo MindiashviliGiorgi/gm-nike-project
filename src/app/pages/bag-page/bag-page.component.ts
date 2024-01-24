@@ -8,6 +8,8 @@ import { ShoppingCartService } from 'src/app/shared/shopping-cart.service';
 })
 export class BagPageComponent {
   items : any[] = [];
+  promoCodeField : boolean = false;
+  subtotalPrice : number | undefined;
 
   constructor(
     private shoppingCart : ShoppingCartService,
@@ -16,6 +18,7 @@ export class BagPageComponent {
 
   ngOnInit(): void {
     this.getItems();
+    this.calculateSubtotal();
   }
 
   getItems() {
@@ -26,17 +29,29 @@ export class BagPageComponent {
     this.shoppingCart.removeCartItem(item);
   }
 
-  promoCodeField : boolean = false;
   openPromoCodeField() {
+    const promoCodeMainDiv = this.el.nativeElement.querySelector('.promo-code');
     const arrow = this.el.nativeElement.querySelector('.promo-arrow');
+    const inputField = this.el.nativeElement.querySelector('.promo-code-input');
 
     this.promoCodeField = !this.promoCodeField;
     if(this.promoCodeField) {
+      promoCodeMainDiv.style.height = 'auto';
       arrow.style.transform = 'rotate(-90deg)';
+      inputField.style.height = '38px';
+      inputField.style.opacity = '1';
+      inputField.style.zIndex = '1';
     } else {
+      promoCodeMainDiv.style.height = 'auto';
       arrow.style.transform = 'rotate(90deg)';
+      inputField.style.height = '0px';
+      inputField.style.opacity = '0';
+      inputField.style.zIndex = '-5';
     };
-    
+  }
+
+  calculateSubtotal(): void {
+    this.subtotalPrice = this.shoppingCart.calculateSubtotal(this.items);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { LanguageService } from 'src/app/shared/language.service';
 
 interface NewInformation {
   id : number;
@@ -30,8 +31,7 @@ export class HeaderComponent {
       "information" : "Shop"
     }
   ];
-
-  constructor(private el : ElementRef) {}
+  constructor(private el : ElementRef, private languageService : LanguageService) {}
 
   ngOnInit(): void {
     this.showItem();
@@ -71,5 +71,7 @@ export class HeaderComponent {
       headerMiddle.style.position = 'relative'
     }
   }
+
+
 
 }

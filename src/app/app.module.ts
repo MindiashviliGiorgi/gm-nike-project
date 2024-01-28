@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BagComponent } from './components/bag/bag.component';
 import { BagPageComponent } from './pages/bag-page/bag-page.component';
 import { HttpClientModule } from '@angular/common/http'
+import { LanguageService } from './shared/language.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { HttpClientModule } from '@angular/common/http'
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [LanguageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

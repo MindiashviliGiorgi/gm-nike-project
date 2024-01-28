@@ -31,14 +31,21 @@ export class HeaderComponent {
       "information" : "Shop"
     }
   ];
+  currentLangTag = this.getCurrentLangTag();
   constructor(private el : ElementRef, private languageService : LanguageService) {}
 
   ngOnInit(): void {
     this.showItem();
     this.onHeaderScroll();
-    this.languageService.langTagChanged$.subscribe((newLangTag) => {
-      document.documentElement.lang = newLangTag;
-    });
+    // this.languageService.langTagChanged$.subscribe((newLangTag) => {
+    //   document.documentElement.lang = newLangTag;
+    // });
+    document.documentElement.lang = this.getCurrentLangTag();
+
+    window.onload = () => {
+      console.log(this.getCurrentLangTag());
+    };
+  
   }
 
   showItem() {
@@ -77,10 +84,16 @@ export class HeaderComponent {
 
   setGeorgian() {
     this.languageService.setLangTag('ka')
+    window.location.reload();
   }
   
   setEnglish() {
     this.languageService.setLangTag('en')
+    window.location.reload();
   }
 
+
+  getCurrentLangTag(): string {
+    return this.languageService.getLangTag();
+  }
 }

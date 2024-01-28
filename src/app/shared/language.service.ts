@@ -6,18 +6,18 @@ import { Subject, retry } from 'rxjs';
 })
 export class LanguageService {
 
+ 
   constructor() {}
 
   private langTagSubject = new Subject<string>();
-  langTag: string = 'en';
 
   setLangTag(tag: string): void {
-    this.langTag = tag;
     this.langTagSubject.next(tag);
+    localStorage.setItem('langTag', tag)
   }
 
   getLangTag(): string {
-    return this.langTag;
+    return localStorage.getItem('langTag') || 'en';
   }
 
   langTagChanged$ = this.langTagSubject.asObservable();

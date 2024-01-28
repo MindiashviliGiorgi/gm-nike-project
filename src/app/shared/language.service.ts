@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { retry } from 'rxjs';
+import { Subject, retry } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,15 +8,18 @@ export class LanguageService {
 
   constructor() {}
 
-  langTag: string = 'giorgi';
+  private langTagSubject = new Subject<string>();
+  langTag: string = 'en';
 
-  setLangTag(tag: string): string {
+  setLangTag(tag: string): void {
     this.langTag = tag;
-    return this.langTag;
+    this.langTagSubject.next(tag);
   }
 
   getLangTag(): string {
     return this.langTag;
   }
+
+  langTagChanged$ = this.langTagSubject.asObservable();
 
 }

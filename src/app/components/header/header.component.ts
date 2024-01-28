@@ -36,6 +36,9 @@ export class HeaderComponent {
   ngOnInit(): void {
     this.showItem();
     this.onHeaderScroll();
+    this.languageService.langTagChanged$.subscribe((newLangTag) => {
+      document.documentElement.lang = newLangTag;
+    });
   }
 
   showItem() {
@@ -72,6 +75,12 @@ export class HeaderComponent {
     }
   }
 
-
+  setGeorgian() {
+    this.languageService.setLangTag('ka')
+  }
+  
+  setEnglish() {
+    this.languageService.setLangTag('en')
+  }
 
 }

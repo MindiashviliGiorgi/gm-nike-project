@@ -1,0 +1,12 @@
+<div class="main">
+  <div class="carousel-container">
+    <div class="carousel-slide">
+      <img *ngIf="getPrevImage()" [src]="getPrevImage()" alt="Previous Shoe Image">
+      <img [src]="imagesArray[currentIndex].imageSrc" alt="Current Shoe Image">
+      <img *ngIf="getNextImage()" [src]="getNextImage()" alt="Next Shoe Image">
+    </div>
+    <button (click)="moveSlide('prev')">Prev</button>
+    <button (click)="moveSlide('next')">Next</button>
+  </div>
+  
+</div>

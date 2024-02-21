@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { SingleItemComponent } from './pages/single-item/single-item.component';
 import { BagPageComponent } from './pages/bag-page/bag-page.component';
+import { SliderCarouselComponent } from './components/slider-carousel/slider-carousel.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path : 'bag',
     component : BagPageComponent
+  },
+  {
+    path : 'carousel',
+    component : SliderCarouselComponent
   }
 ];
 

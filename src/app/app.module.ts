@@ -14,6 +14,7 @@ import { BagComponent } from './components/bag/bag.component';
 import { BagPageComponent } from './pages/bag-page/bag-page.component';
 import { HttpClientModule } from '@angular/common/http'
 import { LanguageService } from './shared/language.service';
+import { SliderCarouselComponent } from './components/slider-carousel/slider-carousel.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LanguageService } from './shared/language.service';
     SingleItemComponent,
     FooterComponent,
     BagComponent,
-    BagPageComponent
+    BagPageComponent,
+    SliderCarouselComponent
   ],
   imports: [
     BrowserModule,

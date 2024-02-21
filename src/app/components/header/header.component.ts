@@ -42,9 +42,6 @@ export class HeaderComponent {
     // });
     document.documentElement.lang = this.getCurrentLangTag();
 
-    window.onload = () => {
-      console.log(this.getCurrentLangTag());
-    };
   
   }
 
@@ -85,15 +82,15 @@ export class HeaderComponent {
   setGeorgian() {
     this.languageService.setLangTag('ka')
     window.location.reload();
-  }
-  
+  };
+
   setEnglish() {
     this.languageService.setLangTag('en')
     window.location.reload();
-  }
-
+  };
 
   getCurrentLangTag(): string {
     return this.languageService.getLangTag();
-  }
+  };
+  
 }
